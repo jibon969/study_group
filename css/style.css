@@ -1,0 +1,88 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* Navbar Styling */
+header.navbar {
+  padding: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/* Link Colors */
+header .nav-link {
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Buttons */
+header .btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+header .btn-outline-primary:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+header .btn-primary {
+  background: #0d6efd;
+  border: none;
+}
+
+/* Dropdown */
+header .dropdown-menu {
+  border-radius: 0.35rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+}
