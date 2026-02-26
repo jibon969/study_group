@@ -310,3 +310,39 @@ header .dropdown-item:hover {
 .cookie-preference-content {
   margin-bottom: 100px;
 }
+
+/*=============================================== 
+ corporate-section
+===============================================*/
+
+.corporate-section {
+  margin-top: 50px;
+}
+
+.corporate-section img {
+  border-radius: 10px;
+}
+
+.corporate-section-content {
+  margin-bottom: 100px;
+}
+
+.youtube-video {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.youtube-thumbnail {
+  width: 100%; /* Full width of the container */
+  max-width: 360px; /* Max width */
+  height: 250px; /* Fixed height */
+  object-fit: cover; /* Crop to fit nicely */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.youtube-thumbnail:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
