@@ -16,61 +16,59 @@
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand" href="index.html">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
           <img src="img/studygroup-logo.svg" alt="Study Group" height="45">
-          </a>
-          <!-- Mobile Toggle -->
-          <button class="navbar-toggler" type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#mainNav"
-                  aria-controls="mainNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation">
+        </a>
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navigation -->
-          <div class="collapse navbar-collapse" id="mainNav">
+        </button>
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-center">
 
-              <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="solutionsMenu"
-                  role="button" data-bs-toggle="dropdown">Our solutions</a>
+                role="button" data-bs-toggle="dropdown">Our solutions</a>
               <ul class="dropdown-menu" aria-labelledby="solutionsMenu">
-                  <li><a class="dropdown-item" href="#">Educational bridging</a></li>
-                  <li><a class="dropdown-item" href="#">Degree study solutions</a></li>
+                <li><a class="dropdown-item" href="#">Educational bridging</a></li>
+                <li><a class="dropdown-item" href="#">Degree study solutions</a></li>
               </ul>
-              </li>
+            </li>
 
-              <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="partnersMenu"
-                  role="button" data-bs-toggle="dropdown">Our partners</a>
+                role="button" data-bs-toggle="dropdown">Our partners</a>
               <ul class="dropdown-menu" aria-labelledby="partnersMenu">
-                  <li><a class="dropdown-item" href="#">Ireland</a></li>
-                  <li><a class="dropdown-item" href="#">UK</a></li>
-                  <li><a class="dropdown-item" href="#">USA</a></li>
+                <li><a class="dropdown-item" href="#">Ireland</a></li>
+                <li><a class="dropdown-item" href="#">UK</a></li>
+                <li><a class="dropdown-item" href="#">USA</a></li>
               </ul>
-              </li>
-
-              <li class="nav-item">
-              <a class="nav-link" href="{% url 'about-us' %}">About us</a>
-              </li>
-
-              <li class="nav-item">
-              <a class="nav-link" href="{% url 'news' %}">News</a>
-              </li>
-
-              <li class="nav-item">
-              <a class="btn btn-outline-primary ms-2" href="{% url 'agent-login' %}">Agent Login</a>
-              </li>
-
-              <li class="nav-item">
-              <a class="btn btn-primary ms-2 text-white" href="{% url 'contact-us' %}">Contact Us</a>
-              </li>
-
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="agent-login-btn ms-2" href="#">
+                Agent Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="contact-btn ms-2" href="#">
+                Contact Us
+              </a>
+            </li>
           </ul>
-          </div>
+        </div>
       </div>
     </header>
 
