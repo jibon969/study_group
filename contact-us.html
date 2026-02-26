@@ -1,260 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
-
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Study Group</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- Header -->
-<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-<link rel="preload" as="image" imagesrcset="https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=640&amp;q=75&amp;lossless=true&amp;auto=format 640w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=750&amp;q=75&amp;lossless=true&amp;auto=format 750w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=828&amp;q=75&amp;lossless=true&amp;auto=format 828w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=1080&amp;q=75&amp;lossless=true&amp;auto=format 1080w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=1200&amp;q=75&amp;lossless=true&amp;auto=format 1200w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=1920&amp;q=75&amp;lossless=true&amp;auto=format 1920w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=2048&amp;q=75&amp;lossless=true&amp;auto=format 2048w, https://assets-us-01.kc-usercontent.com:443/95d47d95-36b6-00af-a24c-b886ecdfc4a2/7cb64361-38b2-4dad-8f7b-9042130cae88/sg-brand-update-homepage-hero.png?w=3840&amp;q=75&amp;lossless=true&amp;auto=format 3840w" imagesizes="100vw">
-    <!-- Logo -->
-    <a class="navbar-brand" href="{% url 'home' %}">
-      <img src="/static/images/logo.png" alt="Study Group" height="45">
-    </a>
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+          <img src="img/studygroup-logo.svg" alt="Study Group" height="45">
+          </a>
+          <!-- Mobile Toggle -->
+          <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mainNav"
+                  aria-controls="mainNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <!-- Navigation -->
+          <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-center">
 
-    <!-- Navigation -->
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="solutionsMenu"
+                  role="button" data-bs-toggle="dropdown">Our solutions</a>
+              <ul class="dropdown-menu" aria-labelledby="solutionsMenu">
+                  <li><a class="dropdown-item" href="#">Educational bridging</a></li>
+                  <li><a class="dropdown-item" href="#">Degree study solutions</a></li>
+              </ul>
+              </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="solutionsMenu"
-             role="button" data-bs-toggle="dropdown">Our solutions</a>
-          <ul class="dropdown-menu" aria-labelledby="solutionsMenu">
-            <li><a class="dropdown-item" href="#">Educational bridging</a></li>
-            <li><a class="dropdown-item" href="#">Degree study solutions</a></li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="partnersMenu"
+                  role="button" data-bs-toggle="dropdown">Our partners</a>
+              <ul class="dropdown-menu" aria-labelledby="partnersMenu">
+                  <li><a class="dropdown-item" href="#">Ireland</a></li>
+                  <li><a class="dropdown-item" href="#">UK</a></li>
+                  <li><a class="dropdown-item" href="#">USA</a></li>
+              </ul>
+              </li>
+
+              <li class="nav-item">
+              <a class="nav-link" href="{% url 'about-us' %}">About us</a>
+              </li>
+
+              <li class="nav-item">
+              <a class="nav-link" href="{% url 'news' %}">News</a>
+              </li>
+
+              <li class="nav-item">
+              <a class="btn btn-outline-primary ms-2" href="{% url 'agent-login' %}">Agent Login</a>
+              </li>
+
+              <li class="nav-item">
+              <a class="btn btn-primary ms-2 text-white" href="{% url 'contact-us' %}">Contact Us</a>
+              </li>
+
           </ul>
-        </li>
+          </div>
+      </div>
+    </header>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="partnersMenu"
-             role="button" data-bs-toggle="dropdown">Our partners</a>
-          <ul class="dropdown-menu" aria-labelledby="partnersMenu">
-            <li><a class="dropdown-item" href="#">Ireland</a></li>
-            <li><a class="dropdown-item" href="#">UK</a></li>
-            <li><a class="dropdown-item" href="#">USA</a></li>
-          </ul>
-        </li>
+    <!-- Hero Section -->
+    <section class="hero mb-5">
+        <h1 class="text-center">Contact Us</h1>
+    </section>
 
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about-us' %}">About us</a>
-        </li>
+  
 
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'news' %}">News</a>
-        </li>
+  <!-- Footer Start -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+      <div class="container">
+          <div class="row">
+              <!-- Column 1: About -->
+              <div class="col-md-3 mb-4">
+                  <h5 class="fw-bold mb-3">Study Group</h5>
+                  <p>Helping students and universities connect globally. Contact us for enquiries or partnerships.</p>
+              </div>
+              <!-- Column 2: Quick Links -->
+              <div class="col-md-3 mb-4">
+                  <h6 class="fw-bold mb-3">Quick Links</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-light text-decoration-none">Our Solutions</a></li>
+                      <li><a href="#" class="text-light text-decoration-none">Partners</a></li>
+                      <li><a href="#" class="text-light text-decoration-none">News</a></li>
+                      <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                  </ul>
+              </div>
+              <!-- Column 3: Legal -->
+              <div class="col-md-3 mb-4">
+                  <h6 class="fw-bold mb-3">Legal</h6>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="privacy-policy.html" class="text-light text-decoration-none">
+                              Privacy Policy
+                          </a>
+                      </li>
+                      <li>
+                          <a href="terms_of_use.html" class="text-light text-decoration-none">
+                              Terms of Use
+                          </a>
+                      </li>
+                      <li>
+                          <a href="cookie-preference.html" class="text-light text-decoration-none">
+                              Cookie Preferences
+                          </a>
+                      </li>
+                      <li>
+                          <a href="media_portal.html" class="text-light text-decoration-none">
+                              Modern Slavery Statement
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- Column 4: Follow Us -->
+              <div class="col-md-3 mb-4">
+                  <h6 class="fw-bold mb-3">Follow Us</h6>
+                  <div class="d-flex gap-3">
+                      <a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-light fs-5"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- Divider -->
+          <hr class="border-top border-secondary">
 
-        <li class="nav-item">
-          <a class="btn btn-outline-primary ms-2" href="{% url 'agent-login' %}">Agent Login</a>
-        </li>
+          <!-- Copyright -->
+          <div class="row">
+              <div class="col text-center">
+                  <small>© 2026 Study Group Limited. All rights reserved.</small>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Footer End -->
 
-        <li class="nav-item">
-          <a class="btn btn-primary ms-2 text-white" href="{% url 'contact-us' %}">Contact Us</a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</header>
-
-
-<section class="contact-us-section py-5">
-    <div class="container">
-
-        <!-- Title -->
-        <div class="text-center mb-4">
-            <h2 class="fw-bold">Contact Us</h2>
-            <p class="text-muted">Please choose the relevant option below to submit an enquiry. We will respond as soon as possible.</p>
-        </div>
-
-        <!-- Card Options -->
-        <div class="row gy-3 mb-5">
-
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">General Enquiries</h5>
-                        <p class="card-text text-muted">For students, partners & journalists.</p>
-                        <a href="#generalForm" class="btn btn-dark btn-sm">Make an enquiry</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Agent Application</h5>
-                        <p class="card-text text-muted">Join our global agent network.</p>
-                        <a href="#agentForm" class="btn btn-dark btn-sm">Become an agent</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Partnership Enquiries</h5>
-                        <p class="card-text text-muted">For universities & collaborators.</p>
-                        <a href="#partnerForm" class="btn btn-dark btn-sm">Connect with us</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">English Solutions</h5>
-                        <p class="card-text text-muted">Discuss English study options.</p>
-                        <a href="#englishForm" class="btn btn-dark btn-sm">Make an enquiry</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Contact Form -->
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-
-                <form id="generalForm" class="p-4 border rounded shadow-sm">
-                    <h4 class="mb-3 text-center">Send Us a Message</h4>
-
-                    <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Your name">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control" placeholder="Your email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="Your phone number">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="5" placeholder="How can we help you?"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-dark w-100">
-                        Submit Enquiry
-                    </button>
-                </form>
-
-            </div>
-        </div>
-
-        <!-- Office Info -->
-        <div class="row text-center text-md-start mt-5">
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <h5 class="fw-bold">UK Office</h5>
-                <p class="mb-0">Britannia House<br>21 Station Street<br>Brighton, UK</p>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <h5 class="fw-bold">Australia Office</h5>
-                <p class="mb-0">Office 2105,<br>470 St Kilda Rd<br>Melbourne VIC</p>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-3">
-                <h5 class="fw-bold">USA Office</h5>
-                <p class="mb-0">200 S Wacker Dr,<br>Chicago IL 60606<br>United States</p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- Footer Start -->
-<footer class="bg-dark text-light pt-5 pb-4">
-    <div class="container">
-        <div class="row">
-
-            <!-- Column 1: About -->
-            <div class="col-md-3 mb-4">
-                <h5 class="fw-bold mb-3">Study Group</h5>
-                <p>Helping students and universities connect globally. Contact us for enquiries or partnerships.</p>
-            </div>
-
-            <!-- Column 2: Quick Links -->
-            <div class="col-md-3 mb-4">
-                <h6 class="fw-bold mb-3">Quick Links</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Our Solutions</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Partners</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">News</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3: Legal -->
-            <div class="col-md-3 mb-4">
-                <h6 class="fw-bold mb-3">Legal</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Terms of Use</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Cookie Preferences</a></li>
-                    <li><a href="#" class="text-light text-decoration-none">Modern Slavery Statement</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 4: Follow Us -->
-            <div class="col-md-3 mb-4">
-                <h6 class="fw-bold mb-3">Follow Us</h6>
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-light fs-5"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Divider -->
-        <hr class="border-top border-secondary">
-
-        <!-- Copyright -->
-        <div class="row">
-            <div class="col text-center">
-                <small>© 2026 Study Group Limited. All rights reserved.</small>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer End -->
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
-
