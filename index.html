@@ -1,171 +1,509 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Study Group</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Home - SEA Bright Education</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+   
+    <!--============================================================================ 
+                    Header Section 
+    ==============================================================================-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top px-lg-5 py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo.jpg" alt="Sea Bright Education" height="50">
+                </a>
 
-    <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="img/studygroup-logo.svg" alt="Study Group" height="45">
-        </a>
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNav"
-                aria-controls="mainNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation -->
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-center">
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="about-us.html" id="solutionsMenu"
-                role="button" data-bs-toggle="dropdown">Our solutions</a>
-              <ul class="dropdown-menu" aria-labelledby="solutionsMenu">
-                <li><a class="dropdown-item" href="#">Educational bridging</a></li>
-                <li><a class="dropdown-item" href="#">Degree study solutions</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="partners.html" id="partnersMenu"
-                role="button" data-bs-toggle="dropdown">Our partners</a>
-              <ul class="dropdown-menu" aria-labelledby="partnersMenu">
-                <li><a class="dropdown-item" href="ireland.html">Ireland</a></li>
-                <li><a class="dropdown-item" href="united-kingdom.html">UK</a></li>
-                <li><a class="dropdown-item" href="north-america.html">USA</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="aboutMenu"
-                role="button" data-bs-toggle="dropdown">About us</a>
-              <ul class="dropdown-menu" aria-labelledby="aboutMenu">
-                <li>
-                  <a class="dropdown-item" href="building-futures.html">
-                    Building Futures
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="careers.html">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="corporate-responsibility.html">
-                    Corporate responsibility
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="agent-login-btn ms-2" href="agent-portal.html" target="_blank">
-                Agent Login
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="contact-btn ms-2" href="contact-us.html">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero my-5">
-        <h1 class="text-center">Home page</h1>
-    </section>
-
-  
-    <!-- Footer Start -->
-    <footer class="bg-dark text-light pt-5 pb-4">
-        <div class="container">
-            <div class="row">
-                <!-- Column 1: About -->
-                <div class="col-md-3 mb-4">
-                    <h5 class="fw-bold mb-3">Study Group</h5>
-                    <p>Helping students and universities connect globally. Contact us for enquiries or partnerships.</p>
-                </div>
-                <!-- Column 2: Quick Links -->
-                <div class="col-md-3 mb-4">
-                    <h6 class="fw-bold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Our Solutions</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Partners</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">News</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
-                    </ul>
-                </div>
-                <!-- Column 3: Legal -->
-                <div class="col-md-3 mb-4">
-                    <h6 class="fw-bold mb-3">Legal</h6>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="privacy-policy.html" class="text-light text-decoration-none">
-                                Privacy Policy
-                            </a>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active fw-bold text-uppercase px-3">Home</a>
                         </li>
-                        <li>
-                            <a href="terms_of_use.html" class="text-light text-decoration-none">
-                                Terms of Use
-                            </a>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link fw-bold text-uppercase px-3">News</a>
                         </li>
-                        <li>
-                            <a href="cookie-preference.html" class="text-light text-decoration-none">
-                                Cookie Preferences
-                            </a>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link fw-bold text-uppercase px-3">Services</a>
                         </li>
-                        <li>
-                            <a href="media_portal.html" class="text-light text-decoration-none">
-                                Modern Slavery Statement
-                            </a>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link fw-bold text-uppercase px-3">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link fw-bold text-uppercase px-3">Contact Us</a>
                         </li>
                     </ul>
-                </div>
-                <!-- Column 4: Follow Us -->
-                <div class="col-md-3 mb-4">
-                    <h6 class="fw-bold mb-3">Follow Us</h6>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-light fs-5"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+                    <div class="d-flex mt-3 mt-lg-0">
+                        <a href="#" class="btn btn-teal fw-bold text-white rounded-pill shadow-sm w-100 w-lg-auto">
+                            GET A QUOTE
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- Divider -->
-            <hr class="border-top border-secondary">
+        </nav>
+    </header>
 
-            <!-- Copyright -->
-            <div class="row">
-                <div class="col text-center">
-                    <small>© 2026 Study Group Limited. All rights reserved.</small>
+    <!--==========================
+            banner Section 
+    ========================-->
+    <section class="hero-banner d-flex align-items-center justify-content-center">
+        <img src="img/banner/London.png" alt="London Skyline" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="hero-content text-center text-white">
+                        <h1 class="display-4 fw-bold mb-3 animate-up">
+                            Your Gateway to <span class="text-teal-accent">Global Education</span> Success
+                        </h1>
+                        <p class="mb-5 opacity-90 mx-auto text-white">
+                            Student Visa Consulting for Bangladesh & Asia - Study Abroad Made Simple
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#" class="btn-learn-more px-5 py-3 rounded-pill shadow-lg">Learn More</a>
+                            <a href="#" class="btn btn-outline-light px-5 py-3 rounded-pill fw-bold">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========================
+        start journey 
+    ========================-->
+    <section class="start-journey py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8 col-md-10">
+                    <div class="journey-content">
+                        <h2 class="fw-bold mb-4">
+                            Start Your Study Abroad Journey Today
+                        </h2>
+                        <p class="lead text-dark">
+                            At <strong class="text-teal">SEA Bright Education</strong>, we specialize in guiding students from Bangladesh and across Asia to achieve their dream of studying abroad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4 p-xxl-5">
+                            <div class="icon-circle mx-auto mb-4">
+                                <i class="fa-solid fa-handshake-simple"></i>
+                            </div>
+                            <h5 class="journey-description">
+                                Proven Experience in Student Visa Consulting
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4 p-xxl-5">
+                            <div class="icon-circle mx-auto mb-4">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <h5 class="journey-description">
+                                Personalized Guidance & Support
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 offset-md-3 offset-lg-0 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4 p-xxl-5">
+                            <div class="icon-circle mx-auto mb-4">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                            <h5 class="journey-description">
+                                Trusted Global Network
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section py-5 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center mb-5 pb-lg-5">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="about-info pe-lg-5">
+                        <h6 class="text-uppercase fw-bold text-teal tracking-widest mb-3">About SEA Bright Education</h6>
+                        <h2 class="display-5 fw-bold text-dark mb-4">Build Your Skills Learn online, Anytime</h2>
+                        <p class="text-muted mb-4">
+                            At <strong>SEA Bright Education</strong>, we are dedicated to empowering international students from Bangladesh and across Asia to achieve their dream of studying abroad. With our expertise in student visa consulting and global university admissions, we provide clear guidance and personalized support.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Our mission is simple: to make international education accessible, reliable, and transformative. By connecting students with world - class institutions, we help them unlock opportunities and build brighter futures.
+                        </p>
+                        <a href="#" class="btn btn-teal-dark px-5 py-3 rounded-pill fw-bold shadow-sm">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-img-wrapper">
+                        <img src="img/About-Banner.png" alt="About SEA Bright" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center flex-column-reverse flex-lg-row mt-5 pt-lg-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="smart-img-wrapper pe-lg-5">
+                        <img src="img/4.png" alt="What we do" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="smart-content">
+                        <h6 class="text-uppercase fw-bold text-teal tracking-widest mb-2">Smart Move</h6>
+                        <h2 class="display-6 fw-bold text-dark mb-4">What do we do?</h2>
+                        
+                        <ul class="custom-check-mark-list list-unstyled mb-5">
+                            <li>Induction for a better understanding of academic options</li>
+                            <li>Providing accurate and detailed information</li>
+                            <li>Assisting students in choosing a course</li>
+                            <li>Conducting initial assessments</li>
+                            <li>Document preparation</li>
+                            <li>Interview and test preparation</li>
+                            <li>Applications & Scholarships</li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-teal-dark px-5 py-3 rounded-pill fw-bold shadow-sm">
+                            Discover More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+   
+    <section class="choose-us-section py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold choose-us-title">Why you will choose us</h2>
+                    <div class="title-underline mx-auto"></div>
+                </div>
+            </div>
+
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <div class="choose-card shadow-sm h-100">
+                        <div class="choose-us-icon-circle">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4">Experience</h4>
+                        <p class="text-muted small px-3">Years of expertise in navigating complex global visa regulations.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="choose-card shadow-sm h-100">
+                        <div class="choose-us-icon-circle">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4">Quality</h4>
+                        <p class="text-muted small px-3">High success rates and premium university partnerships.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="choose-card shadow-sm h-100">
+                        <div class="choose-us-icon-circle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4">Reliability</h4>
+                        <p class="text-muted small px-3">Trusted by thousands of students for secure admissions.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="choose-card shadow-sm h-100">
+                        <div class="choose-us-icon-circle">
+                            <i class="fa-solid fa-users-viewfinder"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4">Diversity</h4>
+                        <p class="text-muted small px-3">A wide range of global institutions to fit every budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold section-title mb-4">
+                        Explore Our Visa Citizenship <br class="d-none d-md-block"> & Immigration Services
+                    </h2>
+                    <div class="title-accent mx-auto"></div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="img-wrapper">
+                            <img src="img/blog/b1.png" class="img-fluid card-img-top" alt="Business Visa">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="service-content">
+                                <h5 class="fw-bold mb-3">Business Visa</h5>
+                                <p class="card-text text-muted mb-4">
+                                    Strategic guidance for entrepreneurs and investors looking to expand their reach globally.
+                                </p>
+                                <a href="#" class="btn btn-read-more rounded-pill shadow-sm">
+                                    Read More <i class="fa-solid fa-arrow-right ms-2 small"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="img-wrapper">
+                            <img src="img/blog/b2.png" class="card-img-top" alt="Student Visa">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="service-content">
+                                <h5 class="fw-bold mb-3">Student Visa</h5>
+                                <p class="card-text text-muted mb-4">
+                                    Complete support from university application to final visa interview for global success.
+                                </p>
+                                <a href="#" class="btn btn-read-more rounded-pill shadow-sm">
+                                    Read More <i class="fa-solid fa-arrow-right ms-2 small"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="img-wrapper">
+                            <img src="img/blog/b3.png" class="card-img-top" alt="Work Visa">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="service-content">
+                                <h5 class="fw-bold mb-3">Work Visa</h5>
+                                <p class="card-text text-muted mb-4">
+                                    Expert assistance in securing employment-based visas for professionals and skilled workers.
+                                </p>
+                                <a href="#" class="btn btn-read-more rounded-pill shadow-sm">
+                                    Read More <i class="fa-solid fa-arrow-right ms-2 small"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="img-wrapper">
+                            <img src="img/blog/b4.png" class="card-img-top" alt="Tourist Visa">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="service-content">
+                                <h5 class="fw-bold mb-3">Tourist Visa</h5>
+                                <p class="card-text text-muted mb-4">
+                                    Fast and reliable tourist visa processing for your leisure and family travel needs.
+                                </p>
+                                <a href="#" class="btn btn-read-more rounded-pill shadow-sm">
+                                    Read More <i class="fa-solid fa-arrow-right ms-2 small"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="testimonial-section py-5">
+        <div class="container">
+            <div class="swiper testimonial-slider pb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-content text-center text-white">
+                            <div class="quote-icon mb-4">
+                                <i class="fa-solid fa-quote-left fa-3x"></i>
+                            </div>
+                            <p class="testimonial-text mb-4">
+                                "Highly recommended. SEA Bright Education is really helpful, offering a high quality service towards the students helping those to complete all the necessary documents to obtain the finance and university admission."
+                            </p>
+                            <div class="rating mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="user-info">
+                                <img src="img/jibon.jpg" class="img-fluid rounded-circle mb-3 thumb-img shadow" alt="img is missing">
+                                <h5 class="fw-bold mb-0">Jayed Hossain</h5>
+                                <small class="opacity-75">Student, UK University</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-content text-center text-white">
+                            <div class="quote-icon mb-4">
+                                <i class="fa-solid fa-quote-left fa-3x"></i>
+                            </div>
+                            <p class="testimonial-text mb-4">
+                                "The guidance I received was transformative. They made the complex visa process simple and manageable. I couldn't have achieved my dream of studying in London without their dedicated support."
+                            </p>
+                            <div class="rating mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="user-info">
+                                <img src="img/limu.png" class="rounded-circle mb-3 thumb-img shadow" alt="Jayed Hossain">
+                                <h5 class="fw-bold mb-0">Limu</h5>
+                                <small class="opacity-75">Graduate Student</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="branding py-5">
+        <div class="container-fluid px-0">
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase">Our Global Partners</h5>
+            </div>
+
+            <div class="logo-slider">
+                <div class="logo-slide-track">
+                    <div class="slide"><img src="img/university/u1.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u2.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u3.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u4.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u5.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u6.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u7.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u8.png" alt="University" class="img-fluid"></div>
+                    
+                    <div class="slide"><img src="img/university/u1.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u2.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u3.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u4.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u5.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u6.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u7.png" alt="University" class="img-fluid"></div>
+                    <div class="slide"><img src="img/university/u8.png" alt="University" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="img/Footer-LOGO-Trans.png" alt="SEA Bright Logo" class="mb-3">
+                        <h3 class="fw-bold">Education</h3>
+                        <p class="mt-4">
+                            Seabright Education Consultancy is a one-stop shop offering accounting, financial and advisory services. Beneficial experienced finance professionals.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-start text-md-center">
+                    <h3 class="fw-bold mb-4 footer-heading">Quick Links</h3>
+                    <div class="quick-links-inner">
+                        <ul class="footer-links list-unstyled d-inline-block text-start">
+                            <li><a href="#"><i class="fa-solid fa-link"></i> Apply Now</a></li>
+                            <li><a href="#"><i class="fa-solid fa-link"></i> Accommodation</a></li>
+                            <li><a href="#"><i class="fa-solid fa-link"></i> EU Students</a></li>
+                            <li><a href="#"><i class="fa-solid fa-link"></i> Scholarship</a></li>
+                            <li><a href="#"><i class="fa-solid fa-link"></i> Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h3 class="fw-bold mb-4 footer-heading">Contact Us</h3>
+                        <p class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-accent"></i>
+                            <span>B8 129 Mile End Road, London, E1 4BG UK</span>
+                        </p>
+                        <p class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone text-accent"></i>
+                            <span>+880 1234 567890</span>
+                        </p>
+                        <p class="d-flex align-items-center gap-2 mb-4">
+                            <i class="fa-solid fa-envelope text-accent"></i>
+                            <span>info@education.com</span>
+                        </p>
+                    </div>
+                    <div class="social-links d-flex gap-3 justify-content-start justify-content-md-start">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-bar py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="copyright mb-0">
+                            © <a href="#" class="brand-link">2026 SEA Bright Education .</a> 
+                            All Rights Reserved.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Footer End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
